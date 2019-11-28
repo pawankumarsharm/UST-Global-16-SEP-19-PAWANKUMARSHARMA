@@ -1,0 +1,5 @@
+package com.ustglobal.assignment.dto;
+
+public class Department {
+
+}

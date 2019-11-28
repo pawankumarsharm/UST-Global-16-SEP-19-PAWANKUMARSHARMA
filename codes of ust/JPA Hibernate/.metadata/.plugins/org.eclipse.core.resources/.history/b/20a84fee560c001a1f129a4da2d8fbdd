@@ -1,0 +1,5 @@
+package com.ustglobal.jpawithhibernateonetoone;
+
+public class Person {
+
+}

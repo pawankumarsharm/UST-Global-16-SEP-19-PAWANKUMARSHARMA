@@ -1,0 +1,11 @@
+package com.ustglobal.jpawithhibernate.onetomany;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="pencil")
+public class Pencil {
+private int pid;
+private String color;
+}

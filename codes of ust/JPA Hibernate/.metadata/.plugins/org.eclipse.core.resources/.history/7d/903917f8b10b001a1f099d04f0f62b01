@@ -1,0 +1,14 @@
+package com.ustglobal.assignment;
+
+import com.ustglobal.assignment.dto.Department;
+
+public class InsertQuery {
+
+	public static void main(String[] args) {
+		Department dept=new Department();
+		dept.setDept_no(10);
+		dept.setDname("HR");
+		dept.setLocation("Banglore");
+	}
+
+}

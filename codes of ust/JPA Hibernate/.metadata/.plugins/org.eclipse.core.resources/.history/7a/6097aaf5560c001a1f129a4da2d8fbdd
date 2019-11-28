@@ -1,0 +1,7 @@
+package com.ustglobal.jpawithhibernateonetoone;
+
+public class Person {
+private int pid;
+private String name;
+private Voter voter;
+}

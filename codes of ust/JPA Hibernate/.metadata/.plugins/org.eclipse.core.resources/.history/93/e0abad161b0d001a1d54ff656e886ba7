@@ -1,0 +1,17 @@
+package com.ustglobal.jpawithhibernatemanytomany;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+import lombok.Data;
+
+@Entity
+@Data
+@Table(name="course")
+public class Course {
+	@Column
+private int cid;
+	@Column
+private String cname;
+}

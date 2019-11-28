@@ -1,0 +1,18 @@
+package com.ustglobal.jpawithhibernatemanytomany;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+import lombok.Data;
+
+@Entity
+@Data
+@Table(name="student")
+
+public class Student {
+	@Column
+	private int sid;
+@Column
+	private String sname;
+}

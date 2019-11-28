@@ -1,0 +1,14 @@
+package com.ustglobal.assignment.dto;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="department")
+public class Department {
+private int dept_no;
+private String dname;
+private String location;
+	
+}

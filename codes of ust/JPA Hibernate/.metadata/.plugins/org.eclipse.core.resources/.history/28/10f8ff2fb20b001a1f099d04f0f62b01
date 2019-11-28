@@ -1,0 +1,26 @@
+package com.ustglobal.assignment;
+
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.EntityTransaction;
+import javax.persistence.Persistence;
+
+import com.ustglobal.assignment.dto.Department;
+
+public class InsertQuery {
+
+	public static void main(String[] args) {
+		Department dept=new Department();
+		dept.setDept_no(10);
+		dept.setDname("HR");
+		dept.setLocation("Banglore");
+		
+		EntityManager e=null;
+		EntityTransaction t=null;
+		
+		EntityManagerFactory f=Persistence.createEntityManagerFactory("TestPersistence");
+		
+		
+	}
+
+}

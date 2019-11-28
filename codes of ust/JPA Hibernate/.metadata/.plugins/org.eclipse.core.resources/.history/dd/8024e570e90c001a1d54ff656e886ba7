@@ -1,0 +1,19 @@
+package com.ustglobal.jpawithhibernateonetoone;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+import lombok.Data;
+@Data
+@Entity
+@Table
+public class Person {
+	@Column
+private int pid;
+	@Column
+private String name;
+
+
+private Voter voter;
+}

@@ -1,0 +1,13 @@
+package com.ustglobal.assignment;
+
+import javax.persistence.EntityManager;
+import javax.persistence.EntityTransaction;
+
+public class DeleteQuery {
+public static void main(String[] args) {
+	
+	EntityManager em=null;
+	EntityTransaction et=null;
+	
+}
+}

@@ -1,0 +1,61 @@
+package com.ustglobal.jpawithhibernate;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.EntityTransaction;
+import javax.persistence.Persistence;
+
+import com.ustglobal.jpawithhibernate.manytomany.Course;
+import com.ustglobal.jpawithhibernate.manytomany.Student;
+
+public class ManyToMany {
+public static void main(String[] args) {
+	
+	
+	Course c=new Course();
+	c.setCid(10);
+	c.setCname("java");
+	Course c1=new Course();
+	c1.setCid(20);
+	c1.setCname("html");
+	Course c2=new Course();
+	c2.setCid(30);
+	c2.setCname("sql");
+
+	Student s=new Student();
+	s.setSid(1);
+	s.setSname("Rahul");
+	ArrayList<Course> al=new ArrayList<Course>();
+	al.add(c1);
+	al.add(c2);
+	al.add(c);
+	s.setCourse(al);
+	
+	EntityManager em=null;
+	EntityTransaction et=null;
+	try {
+		EntityManagerFactory emf = Persistence.createEntityManagerFactory("TestPersistence");
+		em = emf.createEntityManager();
+		et = em.getTransaction();
+		et.begin();
+		//em.persist(s);//unidirectional
+		System.out.println("Record Saved");
+		Course ci=em.find(Course.class,10);
+		List<Student> li=ci.getStudents();
+		for (Student s2 : li) {
+			System.out.println(s2.getSid());
+			System.out.println(s2.getSname());
+			System.out.println(s2.getCourse());
+		}
+		et.commit();
+	} catch (Exception e) {
+		e.printStackTrace();
+		et.rollback();
+	}
+	em.close();
+}
+}
+
