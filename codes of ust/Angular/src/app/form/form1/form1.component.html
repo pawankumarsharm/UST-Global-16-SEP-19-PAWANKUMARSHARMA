@@ -1,0 +1,38 @@
+<form class="col-md-6 md-5 card card-body" #form="ngForm" (ngSubmit)="loginData(form)">
+        <h1 class="text-center bg-danger taxt-white">form-1</h1>
+        <div class="form-group">
+            <input type="text" name="name" id="name" class="form-control" placeholder="Company Name" #name="ngModel" ngModel required>
+        </div>
+            <div class="form-group">
+                    <select class="browser-default custom-select">
+                            <option selected>Skills</option>
+                            <option value="1">JAVA</option>
+                            <option value="1">SQL</option>
+                            <option value="1">ANGULAR</option>
+                            <option value="1">SPRING</option>
+                          </select>
+                          </div>
+                          <!-- <div *ngIf="Options.touched && Options.invalid"> -->
+        <p class="alert alert-danger" *ngIf="Options.errors.required">*This field is required</p>
+        <div class="form-group">
+    
+        <input type="text" name="name" id="name" class="form-control" placeholder="year of experience" #name="ngModel" ngModel required>
+             </div>  
+                
+        <div class="form-group">
+      <input type="text" name="name" id="name" class="form-control" placeholder="MCTC" #name="ngModel" ngModel required>
+                    </div><div class="form-group">
+      <input type="text" name="name" id="name" class="form-control" placeholder="Location" #name="ngModel" ngModel required>
+             </div>  
+                       
+       <div *ngIf="name.touched && name.invalid">
+           <p class="alert alert-danger" *ngIf="name.errors.required">*This field is required</p>
+    
+       </div>
+        <!-- </div> -->
+        
+        <div class="form-group">
+            <button type="AddReq" class="btn-outline-success float-right" [disabled]="form.invalid">Add Req</button>
+        </div>
+    </form>
+    

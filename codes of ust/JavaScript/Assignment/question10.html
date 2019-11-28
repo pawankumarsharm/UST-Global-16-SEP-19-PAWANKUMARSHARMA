@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script>
+  //by named function
+  function SumArray(array){
+    var sum=0;
+      for(var i=0;i<array.length;i++){
+          
+          sum=sum+array[i];
+      }
+      return sum;
+  }
+  console.log('sum of array is='+SumArray([10,20,30,40]));
+
+  //by expression function
+
+  var arr=function(array){
+    var sum=0;
+      for(var i=0;i<array.length;i++){
+          
+          sum=sum+array[i];
+      }
+      return sum;
+  }
+  console.log('sum of array is='+arr([10,20,30,40]));
+
+  //by Fat Arrow Function
+  var arr=(array)=>{
+    var sum=0;
+      for(var i=0;i<array.length;i++){
+          
+          sum=sum+array[i];
+      }
+      return sum;
+  }
+  console.log('sum of array is='+arr([10,20,30,40]));
+
+//by self invoked function
+(function(array){
+    var sum=0;
+      for(var i=0;i<array.length;i++){
+          
+          sum=sum+array[i];
+      }
+      console.log('sum of the array='+sum);
+})
+([10,20,30,40]);
+  </script>
+    
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        //by named function
+    function prime(num){
+        var count=1,i=1;
+        while(i<=num/2)
+		{
+			if(num%i==0)
+				count++;
+			i++;
+		}
+         	if(count==2)
+		console.log(num+ " is prime number");
+		else
+		console.log(num+ " is not prime");
+    }
+    prime(5);
+
+    //by function expression
+    var pri=function(num){
+        var count=1,i=1;
+        while(i<=num/2)
+		{
+			if(num%i==0)
+				count++;
+			i++;
+		}
+         	if(count==2)
+		console.log(num+ " is prime number");
+		else
+		console.log(num+ " is not prime");
+    }
+    pri(10);
+    //by fat arrow function
+    var prim=(num)=>{
+        var count=1,i=1;
+        while(i<=num/2)
+		{
+			if(num%i==0)
+				count++;
+			i++;
+		}
+         	if(count==2)
+		console.log(num+ " is prime number");
+		else
+		console.log(num+ " is not prime");
+    }
+    prim(7);
+    
+    //by self invoked function
+    (function(num){
+        var count=1,i=1;
+        while(i<=num/2)
+		{
+			if(num%i==0)
+				count++;
+			i++;
+		}
+         	if(count==2)
+		console.log(num+ " is prime number");
+		else
+		console.log(num+ " is not prime");  
+    })
+    (9);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

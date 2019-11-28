@@ -1,0 +1,7 @@
+<p>event-binding works!</p>
+
+<button type="button" class="btn btn-outline-primary" (click)="printAlertmsg()"> click me</button>
+<!-- for taking the input -->
+<input type="search" name="search" id="search" class="form-control col-md-6 offset-3 mt-4 mb-4" (input)="dataInput($event)" placeholder="enter something...">
+<!-- for seeing input outside the input box -->
+<h4 class="offset-3 mt-2 mb-3">{{Inputdata}}</h4>

@@ -1,0 +1,90 @@
+div{
+    background-image: url("../image/night-scene-1.jpg");
+    height: 800px;
+    width: 1330px;
+    margin-top: -100px;
+}
+input[type="text"]{
+    width: 800px;
+    height: 50px;
+    margin-left: 250px;
+    margin-top: 50px;
+    border: 1px solid white;
+    text-align:center
+}
+h1,h3,h2,h4,h5{
+    color: white;
+    margin-top: 100px;
+    
+}
+h2{
+text-align: center;
+margin-top: -400px;
+}
+h3{
+    text-align: center;
+    margin-top: 10px;
+    }
+    h4{
+        text-align: center;
+        margin-top: 10px;
+    }
+    h5{
+        text-align: center;
+        margin-top: 100px;
+    }
+h1{
+    margin-left: 50px;
+}
+
+.button {
+    
+    color: black;
+    border: 2px solid #4CAF50; /* Green */
+  }
+  img{
+    width: 250px;
+    height:300px;
+    border: 1px solid blue;
+    padding: 10px;
+    /* border-radius: 20px; */
+    margin-left: 10px;
+    margin-right: 10px;
+    /* box-shadow: 10px 10px 15px blue; */
+    /* transition: all 1s; */
+}
+img:hover{
+    transform: scale(1.1,1.1);/*scale is used for zomming purpose*/
+}
+.button1 {
+    
+    color: black;
+    border: 12px solid #4CAF50; /* Green */
+    margin-left: 600px;
+    margin-top: 300px;
+}
+.button2 {
+    
+    color: black;
+    border: 12px solid #4CAF50; /* Green */
+    margin-left: 400px;
+    margin-top: 50px;
+}.button3 {
+    
+    color: black;
+    border: 12px solid #4CAF50; /* Green */
+    margin-left: 300px;
+    margin-top: -50px;
+}
+.button4 {
+    
+    color: black;
+    border: 12px solid #4CAF50; /* Green */
+    margin-left: 600px;
+    margin-top: 100px;
+}
+/* .body{
+    background-image: url(/image/sunset-4469682__340.jpg);
+    height: 560px;
+    background-size: cover;
+} */

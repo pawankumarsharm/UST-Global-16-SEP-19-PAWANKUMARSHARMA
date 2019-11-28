@@ -1,0 +1,46 @@
+<h1 [innerText]="name"></h1>
+<img [src]="imgUrl" alt="image">
+<h1 [style.color]="color" [class.bg-dark]="isActive" [class.bg-primary]="!isActive">
+    {{address}}
+</h1>
+<table class="table table-dark table-bordered table-striped">
+    <thead>
+    <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th [attr.colspan]="colSpanValue">Comntact Number</th>            
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>Pawan</td>
+        <td>23</td>
+        <td>7050589814</td>
+        <td>7646595325</td>
+    </tr>
+    <tr>
+        <td>Mikel</td>
+        <td>24</td>
+        <td>93525769823</td>
+        <td>70465053254</td>
+    </tr>
+    <tr>
+        <td>Priyanka</td>
+        <td>22</td>
+        <td>76980869758</td>
+        <td>76462548669</td>
+    </tr>
+    <tr>
+        <td>Anushka</td>
+        <td>21</td>
+        <td>8076869758</td>
+        <td>7646587978</td>
+    </tr>
+    <tr>
+        <td>Reshu</td>
+        <td>29</td>
+        <td>7680869758</td>
+        <td>7000867658</td>
+    </tr>
+</tbody>
+</table>

@@ -1,0 +1,6 @@
+#grad{
+    height: 700px;
+    /* background:linear-gradient(red,black,blue,green) *//*it will used for circle*/
+    /* background:radial-gradient(red,yellow,blue,green) *//*it will be the straight line in the horizontal*/
+    background:linear-gradient(to right,pink,white,blue,orange);/*it will be start from the right side*/
+}

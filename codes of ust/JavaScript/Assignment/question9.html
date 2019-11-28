@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <script>
+       // Named Function
+   function circum(n1){
+       var c1=2*3.14*n1;
+       return c1;
+   }
+   
+   //Expression Function
+        console.log("By Named Function",circum(3));
+   var f=function (n2){
+    var c2=2*3.14*n2;
+       return c2;
+   
+   }
+   console.log("By Expression Function "+f(4));
+
+//Fat Arrow Function
+var f1= (n3)=>  console.log("By Fat Arrow Function "+2*3.14*n3);
+f1(5);
+
+//"By Self Invoking Function "
+(function (n4){
+    console.log("By Self Invoking Function  "+2*3.14*n4);
+})(6);
+   </script>
+    <title>Document</title>
+</head>
+<body> 
+    
+</body>
+</html>

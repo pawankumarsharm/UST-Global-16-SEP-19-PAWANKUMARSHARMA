@@ -1,0 +1,47 @@
+<form class="col-md-6  md-5 card card-body" #form="ngForm" (ngSubmit)="loginData(form)">
+        <h1 class="text-center bg-secondary taxt-white">form-2</h1>
+        <div class="form-group">
+            <input type="text" name="name" id="name" class="form-control" placeholder="Candidate Name" #name="ngModel" ngModel required>
+        </div>
+           
+                          <!-- <div *ngIf="Options.touched && Options.invalid"> -->
+        <p class="alert alert-warning" *ngIf="Options.errors.required">*This field is required</p>
+        <div class="form-group">
+     
+        <input type="text" name="name" id="name" class="form-control" placeholder="year of experience" #name="ngModel" ngModel required>
+          </div> 
+          <div class="form-group">
+
+          <label for="male">Skills</label>
+        </div>
+        <div class="form-group">
+
+        <input type="radio" name="Skills" value="JAVA"> JAVA
+        <input type="radio" name="Skills" value="ANGULAR"> ANGULAR
+        <input type="radio" name="Skills" value="sql"> SQL
+        <input type="radio" name="Skills" value="SPRING"> SPRING <br>
+    </div>
+
+          <div class="form-group">
+                    <input type="text" name="name" id="name" class="form-control" placeholder="CCTC" #name="ngModel" ngModel required>
+                    </div>
+                    <div class="form-group">
+                            <input type="text" name="name" id="name" class="form-control" placeholder="ECTC" #name="ngModel" ngModel required>
+                                          </div>
+                                          <div class="form-group">
+                                                <input type="text" name="name" id="name" class="form-control" placeholder="Ready to Reallocate" #name="ngModel" ngModel required>
+                                                              </div>
+                    
+                       
+       <div *ngIf="name.touched && name.invalid">
+           <p class="alert alert-danger" *ngIf="name.errors.required">*This field is required</p>
+    
+       </div>
+        <!-- </div> -->
+        
+        <div class="form-group">
+            <button type="ScheduleInterview" class="btn-outline-success float-right" [disabled]="form.invalid">Schedule Interview</button>
+        </div>
+    </form>
+    
+

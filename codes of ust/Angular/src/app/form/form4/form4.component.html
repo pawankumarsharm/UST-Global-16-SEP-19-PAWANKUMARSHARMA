@@ -1,0 +1,32 @@
+<form class="col-md-6  md-5 card card-body" #form="ngForm" (ngSubmit)="loginData(form)">
+        <h1 class="text-center bg-success taxt-white">form-4</h1>
+        
+            
+          <div class="form-group">
+                    <input type="text" name="name" id="name" class="form-control" placeholder="Product Name" #name="ngModel" ngModel required>
+                    </div>
+                    <div class="form-group">
+                            <input type="text" name="price" id="price" class="form-control" placeholder="Product Price" #name="ngModel" ngModel required>
+                                          </div>
+                                          <div class="form-group">
+                                                <input type="description" name="description" id="description" class="form-control" placeholder="Product Description" #name="ngModel" ngModel required>
+                                                              </div>
+                                                              <div class="form-group">
+                                                                    <input type="text" name="image" id="image" class="form-control" placeholder="Product image-url" #name="ngModel" ngModel required>
+                                                                                  </div>
+                    
+                       
+       <div *ngIf="name.touched && name.invalid">
+           <p class="alert alert-danger" *ngIf="name.errors.required">*This field is required</p>
+    
+       </div>
+        <!-- </div> -->
+        
+        <div class="form-group">
+            <button type="AddProduct" class="btn-outline-success float-right" [disabled]="form.invalid">Add Product</button>
+        </div>
+    </form>
+    
+
+
+

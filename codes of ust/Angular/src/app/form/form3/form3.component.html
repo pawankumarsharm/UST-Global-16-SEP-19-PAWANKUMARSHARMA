@@ -1,0 +1,50 @@
+<form class="col-md-6  md-5 card card-body" #form="ngForm" (ngSubmit)="loginData(form)">
+        <h1 class="text-center bg-warning taxt-white">form-3</h1>
+        <div class="form-group">
+            <input type="text" name="name" id="name" class="form-control" placeholder="User Name" #name="ngModel" ngModel required>
+        </div>
+           
+                          <!-- <div *ngIf="Options.touched && Options.invalid"> -->
+        <p class="alert alert-warning" *ngIf="Options.errors.required">*This field is required</p>
+        <div class="form-group">
+     
+        <input type="text" name="age" id="age" class="form-control" placeholder="User Age" #name="ngModel" ngModel required>
+          </div> 
+          <div class="form-group">
+
+          <label for="male">Gender</label>
+        </div>
+        <div class="form-group">
+
+        <input type="radio" name="Gender" value="male"> male
+        <input type="radio" name="Gender" value="female"> female
+        <input type="radio" name="Gender" value="other"> other <br>
+    </div>
+
+          <div class="form-group">
+                    <input type="email" name="email" id="email" class="form-control" placeholder="User Email" #name="ngModel" ngModel required>
+                    </div>
+                    <div class="form-group">
+                            <input type="text" name="contact" id="contact" class="form-control" placeholder="User contact Number" #name="ngModel" ngModel required>
+                                          </div>
+                                          <div class="form-group">
+                                                <input type="password" name="password" id="password" class="form-control" placeholder="password" #name="ngModel" ngModel required>
+                                                              </div>
+                                                              <div class="form-group">
+                                                                    <input type="password" name="password" id="password" class="form-control" placeholder="Retype-Password" #name="ngModel" ngModel required>
+                                                                                  </div>
+                    
+                       
+       <div *ngIf="name.touched && name.invalid">
+           <p class="alert alert-danger" *ngIf="name.errors.required">*This field is required</p>
+    
+       </div>
+        <!-- </div> -->
+        
+        <div class="form-group">
+            <button type="ScheduleInterview" class="btn-outline-success float-right" [disabled]="form.invalid">Add User</button>
+        </div>
+    </form>
+    
+
+
